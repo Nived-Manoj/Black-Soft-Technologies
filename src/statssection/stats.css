@@ -1,0 +1,131 @@
+/* Container for stats section */
+.stats-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2rem;
+    background-color: black;
+    border-radius: 10px;
+    margin-top: 3rem;
+    animation: fadeIn 1.5s ease-in-out;
+    overflow: hidden;
+    flex-wrap: wrap;
+    /* Allows wrapping for mobile view */
+}
+.stats-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px;
+    transition: all 0.3s ease-in-out;
+}
+
+
+
+
+
+
+/* Individual stat items */
+.stats-item {
+    opacity: 1;
+        transform: translateY(30px);
+        /* Start with a slight offset */
+        transition: opacity 1s ease-out, transform 1s ease-out;
+    text-align: center;
+    flex: 1;
+    max-width: 200px;
+    /* Limits width for each stat item */
+    margin: 10px;
+    /* Adds spacing between items */
+    transform: scale(0.8);
+    animation: popIn 1.5s ease-in-out;
+    animation-delay: calc(var(--index) * 0.3s);
+    animation-fill-mode: both;
+}
+.stats-item.animate {
+    opacity: 1;
+    transform: translateY(0);
+    /* Element moves into place */
+}
+
+/* Number styling */
+.stats-number {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #684DF4;
+    margin-bottom: 0.5rem;
+    opacity: 0;
+    animation: fadeUp 1s ease-in-out forwards;
+    animation-delay: calc(var(--index) * 0.4s);
+}
+
+/* Label styling */
+.stats-label {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #4a4a4a;
+    opacity: 0;
+    animation: fadeUp 1s ease-in-out forwards;
+    animation-delay: calc(var(--index) * 0.5s);
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes popIn {
+    from {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Mobile view adjustments */
+@media (max-width: 768px) {
+    .stats-container {
+        flex-direction: column;
+        /* Stack items vertically */
+        align-items: center;
+    }
+
+    .stats-item {
+        max-width: 100%;
+        /* Full width for items */
+    }
+
+    .stats-number {
+        font-size: 2.5rem;
+        /* Smaller font size for numbers */
+    }
+
+    .stats-label {
+        font-size: 1rem;
+        /* Adjust label size for mobile */
+    }
+}

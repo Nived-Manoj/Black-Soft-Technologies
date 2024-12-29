@@ -1,0 +1,198 @@
+/* General Styles */
+.footer {
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color: #fff;
+    padding: 50px 20px;
+    font-family: 'Poppins', sans-serif;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+/* Logo and Description */
+.footer-logo h1 {
+    font-size: 2.2em;
+    color: #f9f9f9;
+    margin-bottom: 15px;
+}
+
+.footer-description {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #ccc;
+}
+
+/* Services Section */
+.footer-links h2 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+.services-grid {
+    display: flex;
+    justify-content: space-between;
+}
+
+.services-grid ul {
+    list-style: none;
+    padding: 0;
+    animation: slideIn 1.5s ease-in-out;
+}
+
+.services-grid ul li {
+    font-size: 14px;
+    color: #d4d4d4;
+    margin-bottom: 10px;
+    transition: color 0.3s;
+}
+
+.services-grid ul li:hover {
+    color: #fff;
+}
+
+/* Contact Section */
+.footer-contact h2 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+.footer-contact p {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.footer-contact .footer-icon {
+    margin-right: 10px;
+}
+
+.footer-contact a {
+    color: #58a6ff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-contact a:hover {
+    color: #a8d1ff;
+}
+
+/* Social Media */
+
+.footer-social h2 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Individual Icon Container (Glass Effect) */
+.social-icons a {
+    margin:3px ;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    font-size: 1.8rem;
+    color: #fff;
+    background: rgba(255, 255, 255, 0.2);
+    /* Slight white background */
+    border-radius: 50%;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    /* Light border */
+    backdrop-filter: blur(10px);
+    /* Glass effect */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, color 0.3s, background 0.3s;
+    overflow: hidden;
+    z-index: 1;
+}
+
+/* Hover Effect on Glass Containers */
+.social-icons a:hover {
+    color: #0077b5;
+    /* Change color on hover (Example: blue for Facebook) */
+    transform: scale(1.1);
+    /* Slightly increase the size of the icon */
+}
+
+/* Facebook */
+.social-icons a:nth-child(1):hover {
+    color: #3b5998;
+    /* Facebook blue */
+}
+
+/* Instagram */
+.social-icons a:nth-child(2):hover {
+    color: #e4405f;
+    /* Instagram pink */
+}
+
+/* Twitter */
+.social-icons a:nth-child(3):hover {
+    color: #1da1f2;
+    /* Twitter blue */
+}
+
+@keyframes bounce_613 {
+    40% {
+        transform: scale(1.4);
+    }
+
+    60% {
+        transform: scale(0.8);
+    }
+
+    80% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+.social-icons:hover>a:not(:hover) {
+    filter: blur(6px);
+    /* Apply blur to non-hovered icons */
+    opacity: 0.4;
+    /* Reduce opacity of non-hovered icons */
+}
+
+/* Bottom Section */
+.footer-bottom {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 14px;
+    color: #ccc;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}

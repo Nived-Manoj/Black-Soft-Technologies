@@ -1,0 +1,332 @@
+/* General Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Contact Container */
+.contact-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f4f8;
+    font-family: 'Roboto';
+    padding: 10px;
+    color: white;
+    font-size: 20px;
+    
+}
+
+
+
+
+
+/* Content Wrapper */
+.contact-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 1200px;
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    /* Slightly stronger shadow for depth */
+    background-color: #ffffff27;
+    /* Light semi-transparent background */
+    padding: 40px;
+    gap: 20px;
+    position: relative;
+    /* For positioning the pseudo-element */
+
+    /* Glassmorphism Effect */
+    backdrop-filter: blur(10px);
+    /* Increased blur for stronger effect */
+    border-radius: 15px;
+    /* Optional: for rounded corners */
+
+    /* Subtle border for a more refined glass look */
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    /* Soft white border */
+
+    /* Optional: Inner shadow to add depth to the glass */
+    box-shadow: inset 0px 4px 15px rgba(0, 0, 0, 0.1);
+    /* Inner shadow for depth */
+}
+
+.contact-content::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.03);
+    /* Very subtle overlay to enhance visibility */
+    border-radius: 15px;
+    /* Match the border radius of the section */
+    z-index: -1;
+    /* Ensure it stays behind the content */
+}
+
+/* Left Section */
+.left_section {
+    flex: 1;
+    padding-right: 40px;
+}
+
+.heading {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color:#333;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.description {
+    font-size: 1.1rem;
+    color: rgba(255, 255, 255, 0.799);
+    line-height: 1.6;
+    margin-top: 20px;
+}
+
+/* Right Section */
+.right_section {
+    flex: 1;
+    padding-left: 40px;
+}
+
+.contact_logo {
+    width: 120px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+
+
+.address_details,
+.contact_details,
+.email_details {
+    font-size: 1.1rem;
+    color: rgba(255, 255, 255, 0.518);
+    margin-top: 10px;
+}
+/* General Style for Input and Textarea */
+form input,
+form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    color: #0000007b;
+    background-color: #f9f9f9;
+    transition: all 0.3s ease;
+}
+
+/* Focus Effect */
+form input:focus,
+form textarea:focus {
+    border-color: #4CAF50;
+    /* Green border on focus */
+    outline: none;
+    /* Remove default outline */
+    box-shadow: 0 0 8px rgba(76, 175, 80, 0.3);
+    /* Soft green glow */
+}
+
+/* Hover Effect */
+form input:hover,
+form textarea:hover {
+    border-color: #007BFF;
+    /* Blue border on hover */
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.3);
+    /* Blue glow on hover */
+}
+
+/* For Input Fields */
+form input {
+    border-radius: 12px;
+    background-color: #ffffff81;
+    padding-left: 15px;
+    font-size: 1.1rem;
+}
+
+/* For Textarea */
+form textarea {
+    border-radius: 12px;
+    background-color: #ffffff81;
+    padding-left: 15px;
+    font-size: 1rem;
+    resize: vertical;
+}
+
+/* Placeholder Styling */
+form input::placeholder,
+form textarea::placeholder {
+    color: rgba(0, 0, 0, 0.521);
+    /* Lighter placeholder color */
+}
+
+/* Border Animation */
+form input,
+form textarea {
+    border: 2px solid #d0d0d0;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+/* Motion Button Styling */
+.motion-button {
+    position: relative;
+    display: inline-block;
+    padding: 1px;
+    font-weight: 600;
+    line-height: 1.5;
+    color: white;
+    background-color: #1f2937;
+    /* Tailwind gray-800 */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+    /* Tailwind shadow-2xl */
+    cursor: pointer;
+    border-radius: 1rem;
+    /* Tailwind rounded-xl */
+    transition: transform 0.3s ease-in-out;
+}
+
+.motion-button:hover {
+    transform: scale(1.1);
+}
+
+.motion-button:active {
+    transform: scale(0.9);
+}
+
+.gradient-overlay {
+    position: absolute;
+    inset: 0;
+    border-radius: 1rem;
+    /* Tailwind rounded-xl */
+    background: linear-gradient(to right, #14b8a6, #3b82f6, #8b5cf6);
+    /* from-teal-400 via-blue-500 to-purple-500 */
+    padding: 2px;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.motion-button:hover .gradient-overlay {
+    opacity: 1;
+}
+
+.button-content {
+    position: relative;
+    z-index: 10;
+    display: block;
+    padding: 0.75rem 1.5rem;
+    border-radius: 1rem;
+    /* Tailwind rounded-xl */
+    background-color: #0f172a;
+    /* Tailwind gray-950 */
+}
+
+.button-content .icon-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.button-content span {
+    transition: all 0.5s ease-in-out;
+}
+
+.motion-button:hover .button-content span {
+    transform: translateX(0.25rem);
+}
+
+.motion-button:hover .button-content svg {
+    transform: translateX(0.25rem);
+}
+
+.icon {
+    width: 1.5rem;
+    /* Tailwind w-6 */
+    height: 1.5rem;
+    /* Tailwind h-6 */
+    transition: transform 0.5s ease-in-out;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    .contact-content {
+        flex-direction: column;
+        padding: 20px;
+        gap: 30px;
+    }
+
+    .left_section,
+    .right_section {
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    .right_section {
+        margin-top: 20px;
+    }
+
+    .heading {
+        font-size: 2rem;
+    }
+
+    .description {
+        font-size: 1rem;
+    }
+
+    .contact_form {
+        padding: 20px;
+    }
+
+    .contact_form h2 {
+        font-size: 1.5rem;
+    }
+
+    .contact_form p {
+        font-size: 0.9rem;
+    }
+
+    .form_content input,
+    .form_content textarea {
+        font-size: 0.9rem;
+    }
+}
+
+/* Smaller Screen Styles */
+@media screen and (max-width: 480px) {
+    .heading {
+        font-size: 1.8rem;
+    }
+
+    .description {
+        font-size: 0.9rem;
+    }
+
+    .we_are_here {
+        font-size: 1.5rem;
+    }
+
+    .address_details,
+    .contact_details,
+    .email_details {
+        font-size: 0.9rem;
+    }
+
+    .form_content input,
+    .form_content textarea {
+        padding: 10px;
+        font-size: 0.85rem;
+    }
+
+    .motion-button {
+        font-size: 0.9rem;
+    }
+}

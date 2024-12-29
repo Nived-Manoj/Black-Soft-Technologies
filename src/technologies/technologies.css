@@ -1,0 +1,185 @@
+.technologies-container {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 20px;
+    /* Added padding for spacing inside the container */
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    /* Prevent exceeding screen dimensions */
+    box-sizing: border-box;
+    /* Include padding in the width and height */
+}
+
+.technologies-container h2 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    /* Added more space below the heading */
+    animation: fadeInDown 1s ease-in-out;
+}
+
+/* Responsive grid */
+.technologies-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    /* Increased gap for spacing between cards */
+    max-width: 90%;
+    /* Limit grid width and add blank space on sides */
+    padding: 10px;
+    animation: fadeInUp 1.5s ease-in-out;
+}
+
+.technology-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: linear-gradient(145deg, #f0f0f0, #ffffff);
+    border-radius: 20px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    width: 220px;
+    height: 130px;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    margin: 10px;
+    /* Added margin for spacing around individual cards */
+}
+
+.technology-card:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
+    /*animation: pulse 1.5s infinite;*/
+    transition: all 350ms ease-in-out;
+}
+
+.technology-logo {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+    animation: zoomIn 0.8s ease;
+}
+
+.technology-card p {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Animations */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes pulse {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.05);
+    }
+}
+
+@keyframes zoomIn {
+    from {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Mobile View */
+@media (max-width: 768px) {
+    .technologies-container {
+        padding: 15px;
+        /* Reduce padding for smaller screens */
+    }
+
+    .technologies-container h2 {
+        font-size: 24px;
+        margin-bottom: 25px;
+    }
+
+    .technologies-grid {
+        gap: 20px;
+        /* Reduce gap for smaller screens */
+    }
+
+    .technology-card {
+        width: 180px;
+        height: 100px;
+        margin: 8px;
+        /* Adjust card spacing for smaller screens */
+    }
+
+    .technology-logo {
+        width: 50px;
+        height: 50px;
+    }
+
+    .technology-card p {
+        font-size: 14px;
+    }
+}
+
+/* Smaller Mobile View */
+@media (max-width: 480px) {
+    .technologies-container {
+        padding: 10px;
+        /* Compact padding for very small screens */
+    }
+
+    .technologies-container h2 {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    .technology-card {
+        width: 150px;
+        height: 90px;
+        margin: 5px;
+        /* Compact spacing */
+    }
+
+    .technology-logo {
+        width: 40px;
+        height: 40px;
+    }
+
+    .technology-card p {
+        font-size: 12px;
+    }
+}

@@ -1,0 +1,234 @@
+/* Background Video */
+.background_video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Ensure video covers the full area */
+    z-index: -2;
+    /* Keep the video at the very back */
+}
+
+/* Overlay Gradient for Readability */
+.overlay_gradient {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7));
+    z-index: -1;
+    /* Keep the gradient above video but behind content */
+}
+
+/* Main Home Container */
+.home_container {
+    position: relative;
+    z-index: 0;
+    /* Ensure the content stays above the video */
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+    padding: 1rem;
+    /* Add padding for better mobile spacing */
+}
+
+/* Content Container */
+.content {
+   
+    position: absolute;
+    top: 43%;
+    right: 60%;
+    
+    
+    text-align: start;
+    color: #ffffff;
+    /* Use white for font color */
+    padding: 1.5rem;
+    box-sizing: border-box;
+    animation: fadeInDown 1.5s ease-in-out;
+    /* Add fade-in animation */
+}
+
+/* Left Content */
+.left_container {
+    text-align: left;
+        /* Ensures content aligns to the left */
+        margin-left: 0;
+        /* Reset any default centering or margins */
+        padding-left: 1rem;
+    margin-top: 2rem;
+    animation: fadeInUp 1.5s ease-in-out;
+    /* Add fade-in animation */
+}
+
+/* Description Text Styling */
+.description_text {
+    font-size: 1rem;
+    /* Adjust font size for mobile */
+    line-height: 1.5;
+    color: #ffffffed;
+    /* White font for better visibility */
+    text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.5);
+    margin-top: 1rem;
+}
+
+/* Button Styling */
+.start-project-btn {
+    box-shadow: 0 0 10px rgba(255, 120, 180, 0.8);
+    display: inline-block;
+    margin: 15px;
+    
+    padding: 0.75rem 2rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    color: #ffffff;
+    background: transparent;
+    border: 2px solid #ffffff;
+    border-radius: 50px;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.4s ease-in-out;
+    z-index: 1;
+    text-decoration: none;
+}
+
+/* Hover Effect */
+.start-project-btn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: linear-gradient(to right, #ff7eb3, #ff758c, #ff616d);
+    z-index: -1;
+    transition: width 0.4s ease-in-out;
+}
+
+.start-project-btn:hover::before {
+    width: 100%;
+}
+
+.start-project-btn:hover {
+    color: #ffffff;
+    border-color: #ff7eb3;
+    transform: scale(1.05);
+}
+
+/* Focus Effect */
+.start-project-btn:focus {
+    outline: none;
+    box-shadow: 0 0 10px rgba(255, 120, 180, 0.8);
+}
+
+
+/* Social Icons Container */
+.social-iconx {
+    position: fixed;
+    /* Fix to the right side of the screen */
+    top: 50%;
+    /* Position vertically at the center of the screen */
+    right: 20px;
+    /* Adjust space from the right edge */
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* Center the icons horizontally */
+    align-items: center;
+    /* Center the icons vertically */
+    gap: 15px;
+    /* Space between the icons */
+    margin-top: 20px;
+    /* Optional: space from other content */
+    
+        /* Ensure it doesn't take more than the viewport height */
+        overflow: hidden;
+}
+
+/* Individual Icon Link */
+.social-iconx a {
+    font-size: 2rem;
+    /* Adjust icon size */
+    color: #333;
+    /* Default icon color */
+    text-decoration: none;
+    /* Remove underlines from links */
+    transition: color 0.3s ease, transform 0.3s ease;
+    /* Smooth transition for color and scaling */
+    padding: 10px;
+    /* Add padding around the icon */
+    border-radius: 50%;
+    /* Make the border circular */
+    display: inline-flex;
+    /* Ensure icons are inline and respect padding */
+    justify-content: center;
+    /* Center the icons inside the circle */
+    align-items: center;
+    /* Align icons in the center */
+    border: 2px solid #333;
+    /* Circular border */
+}
+
+/* Hover Effect */
+.social-iconx a:hover {
+    color: #fff;
+    /* Change color to white on hover */
+    transform: scale(1.1);
+    /* Slightly enlarge the icon */
+}
+
+/* Specific hover styles for each social media */
+.social-iconx a:nth-child(1):hover {
+    border-color: #3b5998;
+    /* Facebook blue */
+}
+
+.social-iconx a:nth-child(2):hover {
+    border-color: #e4405f;
+    /* Instagram pink */
+}
+
+.social-iconx a:nth-child(3):hover {
+    border-color: #1da1f2;
+    /* Twitter blue */
+}
+/* Animation Keyframes */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .content {
+        padding: 1rem;
+        font-size: 0.9rem;
+        /* Slightly smaller font size for smaller screens */
+    }
+
+    .description_text {
+        font-size: 0.9rem;
+        line-height: 1.4;
+    }
+
+    .left_container {
+        margin-top: 1.5rem;
+    }
+}
