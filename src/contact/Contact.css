@@ -6,6 +6,24 @@
     box-sizing: border-box;
 }
 
+/* Subheading Styling */
+.subheading {
+    font-size: 2rem;
+    /* Slightly smaller than heading */
+    color: #ffffff;
+       
+    /* Neutral gray color */
+    font-weight: 600;
+    /* Regular font weight */
+    margin-top: 0;
+    /* Avoid extra spacing */
+    line-height: 1.5;
+    /* Improve readability */
+    max-width: 800px;
+    /* Limit width for better presentation */
+    margin-bottom: 20px;
+    /* Space below subheading */
+}
 /* Contact Container */
 .contact-section {
     display: flex;
@@ -26,6 +44,7 @@
 
 /* Content Wrapper */
 .contact-content {
+     margin-bottom: 40px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;

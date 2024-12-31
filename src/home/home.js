@@ -1,7 +1,7 @@
 import React from 'react';
 import './home.css';
 import AutoTypingAnimation from '../components/AutoTypingText';
-import { FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa";
+import {  FaInstagram,  FaWhatsapp, FaFacebook, FaTwitter } from "react-icons/fa";
 
 
 function Home() {
@@ -31,11 +31,18 @@ function Home() {
           
         </div>
        <a   href="https://wa.me/+919544518563" class="start-project-btn">Start a Project</a>
+     
+        
+     
       </div>
-       <div className="social-iconx">
-            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer"><FaFacebook /></a>
-            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
+ <div className="social-icond">
+            <a href="https://wa.me/+919544518563"  target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
+       <a href="https://facebook.com" target="_blank" rel="noopener noreferrer"><FaFacebook /></a>
             <a href="https://twitter.com" target="_blank" rel="noopener noreferrer"><FaTwitter /></a>
+          </div>
+       <div className="social-iconx">
+            <a href="https://wa.me/+919544518563"  target="_blank" rel="noopener noreferrer"><FaWhatsapp /></a>
+      
           </div>
 
       

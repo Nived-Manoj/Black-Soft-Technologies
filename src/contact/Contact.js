@@ -39,7 +39,7 @@ const Contact = () => {
           className="header"
         >
           <h1 className="heading">Contact Us</h1>
-          <p className="subheading">Reach out for a new project or just say hello</p>
+          <p className="subheading">Let’s build something amazing together!</p>
         </motion.div>
 
         <div className="contact-content"  >
@@ -53,7 +53,7 @@ const Contact = () => {
             <img src={Logo} alt="app_logo" className="contact_logo" />
            
             <p className="description">
-              We would be thrilled to hear from you! Please fill in the form or email us your requirements. Let’s build something amazing together!
+              We would be thrilled to hear from you! Please fill in the form or email us your requirements. 
             </p>
             <p className="address_details">
               <strong>Address:</strong>Suite 369, LR Towers, South Janatha Road, Palarivattom, Kochi, Kerala 682025
