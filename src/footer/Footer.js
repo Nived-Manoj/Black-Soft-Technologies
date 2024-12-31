@@ -1,7 +1,7 @@
 import React from 'react'; 
-import { FaEnvelope, FaPhoneAlt, FaFacebook, FaInstagram, FaTwitter, FaWhatsapp, FaLocationArrow } from 'react-icons/fa';
+import { FaEnvelope, FaPhoneAlt, FaFacebook, FaInstagram, FaTwitter, FaWhatsapp,  } from 'react-icons/fa';
 import './Footer.css';
-import { FaLocationDot, FaMapLocation } from 'react-icons/fa6';
+import { FaLocationDot, } from 'react-icons/fa6';
 
 function Footer() {
   return (
@@ -36,7 +36,7 @@ function Footer() {
             <FaLocationDot className="footer-icon" /> 
             Address: 
             <span>
-              <a > Suite 369, LR Towers, South Janatha Road, Palarivattom, Kochi, Kerala 682025</a>
+              <p > Suite 369, LR Towers, South Janatha Road, Palarivattom, Kochi, Kerala 682025</p>
             </span>
           </p>
           <p>
