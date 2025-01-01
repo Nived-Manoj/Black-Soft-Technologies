@@ -163,3 +163,34 @@
         font-size: 1.5rem;
     }
 }
+
+/* Extra Small Devices (max-width: 480px) */
+@media screen and (max-width: 480px) {
+    .footer {
+        padding: 30px 15px;
+    }
+
+    .footer-logo h1 {
+        font-size: 1.6em;
+    }
+
+    .footer-description {
+        font-size: 12px;
+    }
+
+    .footer-links h2,
+    .footer-contact h2,
+    .footer-social h2 {
+        font-size: 1.2em;
+    }
+
+    .services-grid ul li {
+        font-size: 12px;
+    }
+
+    .social-icons a {
+        width: 35px;
+        height: 35px;
+        font-size: 1.3rem;
+    }
+}
