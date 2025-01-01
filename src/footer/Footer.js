@@ -36,7 +36,7 @@ function Footer() {
             <FaLocationDot className="footer-icon" /> 
             Address: 
             <span>
-              <p > Suite 369, LR Towers, South Janatha Road, Palarivattom, Kochi, Kerala 682025</p>
+              <a href="https://www.google.com/maps"> Suite 369, LR Towers, South Janatha Road, Palarivattom, Kochi, Kerala 682025</a>
             </span>
           </p>
           <p>

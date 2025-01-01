@@ -80,20 +80,19 @@
 }
 
 /* Social Media */
-
 .footer-social h2 {
     font-size: 1.5em;
     margin-bottom: 15px;
 }
-social-icons {
+
+.social-icons {
     display: flex;
     justify-content: center;
     gap: 20px;
 }
 
-/* Individual Icon Container (Glass Effect) */
 .social-icons a {
-    margin:3px ;
+    margin: 3px;
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -102,66 +101,17 @@ social-icons {
     font-size: 1.8rem;
     color: #fff;
     background: rgba(255, 255, 255, 0.2);
-    /* Slight white background */
     border-radius: 50%;
     border: 2px solid rgba(255, 255, 255, 0.3);
-    /* Light border */
     backdrop-filter: blur(10px);
-    /* Glass effect */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s, color 0.3s, background 0.3s;
     overflow: hidden;
     z-index: 1;
 }
 
-/* Hover Effect on Glass Containers */
 .social-icons a:hover {
-    color: #0077b5;
-    /* Change color on hover (Example: blue for Facebook) */
     transform: scale(1.1);
-    /* Slightly increase the size of the icon */
-}
-
-/* Facebook */
-.social-icons a:nth-child(1):hover {
-    color: #3b5998;
-    /* Facebook blue */
-}
-
-/* Instagram */
-.social-icons a:nth-child(2):hover {
-    color: #e4405f;
-    /* Instagram pink */
-}
-
-/* Twitter */
-.social-icons a:nth-child(3):hover {
-    color: #1da1f2;
-    /* Twitter blue */
-}
-
-@keyframes bounce_613 {
-    40% {
-        transform: scale(1.4);
-    }
-
-    60% {
-        transform: scale(0.8);
-    }
-
-    80% {
-        transform: scale(1.2);
-    }
-
-    100% {
-        transform: scale(1);
-    }
-}
-.social-icons:hover>a:not(:hover) {
-    filter: blur(6px);
-    /* Apply blur to non-hovered icons */
-    opacity: 0.4;
-    /* Reduce opacity of non-hovered icons */
 }
 
 /* Bottom Section */
@@ -172,27 +122,44 @@ social-icons {
     color: #ccc;
 }
 
-/* Animations */
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
+/* Mobile View */
+@media screen and (max-width: 768px) {
+    .footer-container {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        text-align: center;
     }
 
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-@keyframes slideIn {
-    from {
-        opacity: 0;
-        transform: translateX(-20px);
+    .footer-logo h1 {
+        font-size: 1.8em;
     }
 
-    to {
-        opacity: 1;
-        transform: translateX(0);
+    .footer-description {
+        font-size: 13px;
+        color: #ddd;
+    }
+
+    .services-grid {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .footer-contact {
+        text-align: center;
+    }
+
+    .footer-social {
+        text-align: center;
+    }
+
+    .social-icons {
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .social-icons a {
+        width: 40px;
+        height: 40px;
+        font-size: 1.5rem;
     }
 }
