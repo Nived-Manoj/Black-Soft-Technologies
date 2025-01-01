@@ -17,7 +17,7 @@ function Footer() {
           <h2>Services</h2>
           <div className="services-grid">
             <ul>
-              <li>Website Development</li>
+              <li>Website <br></br>Development</li>
               <li>Mobile App Development</li>
               <li>Digital Marketing</li>
               <li>Branding</li>

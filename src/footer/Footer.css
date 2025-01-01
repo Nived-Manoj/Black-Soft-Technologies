@@ -80,6 +80,11 @@
 }
 
 /* Social Media */
+.footer-social {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
 .footer-social h2 {
     font-size: 1.5em;
     margin-bottom: 15px;

@@ -29,7 +29,7 @@ const Contact = () => {
   };
 
   return (
-    <section className="contact-section" style={{ backgroundImage: `url(${bgg})` }}>
+    <section id="contact_screen" className="contact-section" style={{ backgroundImage: `url(${bgg})` }}>
       <div className="container" >
         {/* Header Section */}
         <motion.div
@@ -56,7 +56,7 @@ const Contact = () => {
               We would be thrilled to hear from you! Please fill in the form or email us your requirements. 
             </p>
             <p className="address_details">
-              <strong>Address:</strong>Suite 369, LR Towers, South Janatha Road, Palarivattom, Kochi, Kerala 682025
+              <strong>Address:</strong> Suite 369, LR Towers, South Janatha Road, Palarivattom, Kochi, Kerala 682025
             </p>
             <p className="contact_details">
               <strong>Contact:</strong> +91 9961588563, +91 9207205255
