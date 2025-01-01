@@ -96,6 +96,13 @@
     padding-right: 40px;
 }
 
+.left_section img {
+    width: 100px;
+    height: 100px; 
+    object-fit: cover; 
+    border-radius: 50%; 
+}
+
 .heading {
     font-size: 2.5rem;
     font-weight: 600;

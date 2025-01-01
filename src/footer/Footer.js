@@ -1,7 +1,7 @@
 import React from 'react'; 
 import { FaEnvelope, FaPhoneAlt, FaFacebook, FaInstagram, FaTwitter, FaWhatsapp,  } from 'react-icons/fa';
 import './Footer.css';
-import { FaLocationDot, } from 'react-icons/fa6';
+import { FaLocationDot, FaXTwitter } from 'react-icons/fa6';
 
 function Footer() {
   return (
@@ -63,7 +63,7 @@ function Footer() {
           <div className="social-icons">
             <a href="https://facebook.com" target="_blank" rel="noopener noreferrer"><FaFacebook /></a>
             <a href="https://instagram.com" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
-            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer"><FaTwitter /></a>
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer"><FaXTwitter /></a>
           </div>
         </div>
       </div>
