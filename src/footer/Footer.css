@@ -83,7 +83,7 @@
 .footer-social {
     display: flex;
     flex-direction: column;
-    align-items: start;
+    align-items: center;
 }
 .footer-social h2 {
     font-size: 1.5em;

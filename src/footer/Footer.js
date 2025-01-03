@@ -1,5 +1,5 @@
 import React from 'react'; 
-import { FaEnvelope, FaPhoneAlt, FaFacebook, FaInstagram, FaTwitter, FaWhatsapp,  } from 'react-icons/fa';
+import { FaEnvelope, FaPhoneAlt, FaFacebook, FaInstagram, FaWhatsapp,  } from 'react-icons/fa';
 import './Footer.css';
 import { FaLocationDot, FaXTwitter } from 'react-icons/fa6';
 
@@ -17,7 +17,7 @@ function Footer() {
           <h2>Services</h2>
           <div className="services-grid">
             <ul>
-              <li>Website <br></br>Development</li>
+              <li>Website Development  </li>
               <li>Mobile App Development</li>
               <li>Digital Marketing</li>
               <li>Branding</li>
