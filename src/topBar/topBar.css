@@ -6,6 +6,12 @@
     font-family: 'Poppins', sans-serif;
 }
 
+.top_cont {
+    /* height: 100vh;
+    width: 100vw; */
+    background-color: #000102;
+}
+
 /* Topbar Container */
 .topbar_container {
     display: flex;
@@ -125,8 +131,65 @@
     transition: transform 0.3s ease-in-out;
 }
 
+
+@media screen and (max-width: 900px) {
+    .topbar_container {
+        height: 55px;
+    }
+
+    .logo_container {
+        width: 40px;
+        height: 40px;
+    }
+
+    .top_item {
+        font-size: 0.7rem;
+    }
+}
+
 /* Mobile-Friendly Design */
 @media (max-width: 768px) {
+    .topbar_container {
+        display: none;
+        flex-direction: column;
+        padding: 1rem 1.5rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .nav_links {
+        flex-direction: column;
+        gap: 1.5rem;
+        margin-top: 1rem;
+        text-align: center;
+    }
+
+    .logo {
+        height: 40px;
+        margin-bottom: 1rem;
+    }
+
+    .logo_container {
+        width: 50px;
+        height: 50px;
+    }
+
+    .top_item {
+        font-size: 1rem;
+    }
+
+    .topbar_container {
+        padding: 0.5rem 1rem;
+    }
+
+    .nav_links a {
+        padding: 0.5rem 0;
+        width: 100%;
+    }
+}
+
+/* Extra Small Devices (max-width: 480px) */
+@media screen and (max-width: 480px) {
     .topbar_container {
         flex-direction: column;
         padding: 1rem 1.5rem;

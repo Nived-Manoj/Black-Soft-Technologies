@@ -41,6 +41,7 @@
     color: white;
     text-transform: uppercase;
     opacity: 0;
+    text-align: center;
     transform: scale(0.8); 
     transition: transform 1.5s ease-out, opacity 1.5s ease-out;
 }
@@ -64,4 +65,12 @@
 :root {
     --hue-6: rgb(119, 85, 152);
     --hue-6-transparent: rgb(203, 180, 225);
+}
+
+
+@media (max-width: 480px) {
+.heading{
+    font-size: 1.5rem;
+    padding-top: 10px;
+}
 }

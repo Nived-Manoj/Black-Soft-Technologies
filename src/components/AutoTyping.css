@@ -18,3 +18,22 @@
 } */
 
 
+@media screen and (max-width: 900px){
+.auto-typing-container{
+    font-size: 0.6rem;
+}
+}
+
+@media (max-width: 768px) {
+    .auto-typing-container{
+        font-size: 0.6rem;
+    }
+
+}
+
+@media (max-width: 500px) {
+.auto-typing-container{
+    font-size: 0.5rem;
+}
+}
+
