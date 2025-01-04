@@ -1,5 +1,4 @@
-
-.service_container{
+.service_container {
     padding-top: 10px;
 }
 
@@ -7,7 +6,7 @@
 .service_title {
     font-size: 2.5rem;
     font-weight: bold;
-  margin-left: 155px;
+    margin-left: 155px;
     margin-top: 50px;
     margin-bottom: 20px;
     color: #333;
@@ -37,6 +36,7 @@
     perspective: 1000px;
     /* Create 3D perspective */
 }
+
 .flip-card-image {
     width: 60%;
     height: 55%;
@@ -85,6 +85,7 @@
     font-weight: bold;
     margin-bottom: 10px;
 }
+
 .flip-card-container {
     display: flex;
     /* Flexbox layout to align cards horizontally */
@@ -95,16 +96,17 @@
     padding: 20px;
     /* Add padding around the container */
 }
+
 .flip-card {
-    
-height: 300px;
-width: 500px;
+
+    height: 300px;
+    width: 500px;
     background-color: transparent;
-        /* Align cards horizontally in the center */
-        gap: 20px;
-        /* Add space between the cards */
-        padding: 20px;
-   
+    /* Align cards horizontally in the center */
+    gap: 20px;
+    /* Add space between the cards */
+    padding: 20px;
+
     perspective: 1000px;
     font-family: sans-serif;
 }
@@ -142,7 +144,7 @@ width: 500px;
     backface-visibility: hidden;
     border: 1px solid coral;
     border-radius: 1rem;
-    
+
     padding: 25px;
 }
 
@@ -164,6 +166,9 @@ width: 500px;
     color: white;
     transform: rotateY(180deg);
 }
+
+
+
 /* Mobile View */
 @media screen and (max-width: 768px) {
     .service_title {

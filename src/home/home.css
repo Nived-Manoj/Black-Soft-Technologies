@@ -41,12 +41,12 @@
 
 /* Content Container */
 .content {
-   
+
     position: absolute;
     top: 43%;
     right: 60%;
-    
-    
+
+
     text-align: start;
     color: #ffffff;
     /* Use white for font color */
@@ -59,10 +59,10 @@
 /* Left Content */
 .left_container {
     text-align: left;
-        /* Ensures content aligns to the left */
-        margin-left: 0;
-        /* Reset any default centering or margins */
-        padding-left: 1rem;
+    /* Ensures content aligns to the left */
+    margin-left: 0;
+    /* Reset any default centering or margins */
+    padding-left: 1rem;
     margin-top: 2rem;
     animation: fadeInUp 1.5s ease-in-out;
     /* Add fade-in animation */
@@ -84,7 +84,7 @@
     box-shadow: 0 0 10px rgba(255, 120, 180, 0.8);
     display: inline-block;
     margin: 15px;
-    
+
     padding: 0.75rem 2rem;
     font-size: 1.2rem;
     font-weight: bold;
@@ -136,7 +136,7 @@
     position: absolute;
     top: 50%;
     /* Center vertically */
-   right: 30px;
+    right: 30px;
     /* Position from the left edge */
     transform: translateY(-50%);
     /* Adjust for exact centering */
@@ -213,6 +213,7 @@
     /* Ensures it's above other content */
 }
 
+
 /* Individual Icon Link */
 .social-iconx a {
     font-size: 2rem;
@@ -231,7 +232,7 @@
     /* Center the icons inside the circle */
     align-items: center;
     /* Align icons in the center */
-                background: linear-gradient(135deg, #28f447, #4ee54b);
+    background: linear-gradient(135deg, #28f447, #4ee54b);
     /* Green gradient */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     /* Subtle shadow for depth */
@@ -239,11 +240,12 @@
     /* Smooth transition for hover effects */
 }
 
+
 /* Hover Effect */
 .social-iconx a:hover {
     color: #ffffff;
     /* Keep icon color white */
-            background: linear-gradient(135deg, #34c55b, #1ce62d);
+    background: linear-gradient(135deg, #34c55b, #1ce62d);
     /* Dark gradient on hover */
     transform: scale(1.15);
     /* Slight enlargement */
@@ -281,12 +283,16 @@
     }
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
+
+@media screen and (max-width: 1230px) {
     .content {
-        padding: 1rem;
+        padding: 0px 0px;
         font-size: 0.9rem;
-        /* Slightly smaller font size for smaller screens */
+    }
+
+    .content a {
+        font-size: 0.7rem;
+
     }
 
     .description_text {
@@ -296,5 +302,113 @@
 
     .left_container {
         margin-top: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .content {
+        font-size: 0.5rem;
+        margin: 0;
+    }
+
+    .content a {
+        font-size: 0.7rem;
+    }
+
+    .description_text {
+        font-size: 0.6rem;
+        line-height: 1.4;
+    }
+
+    .left_container {
+        margin-left: 20px;
+        margin-top: 1.5rem;
+        padding: 0;
+    }
+
+    .start-project-btn {
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+        overflow: hidden;
+    }
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    /* .content {
+        padding: 1rem;
+        font-size: 0.9rem;
+    }
+
+    .description_text {
+        font-size: 0.9rem;
+        line-height: 1.4;
+    }
+
+    .left_container {
+        margin-top: 1.5rem;
+    } */
+
+    .content {
+        padding: 0px 0px;
+        font-size: 0.9rem;
+    }
+
+    .content a {
+        font-size: 0.7rem;
+
+    }
+
+    .description_text {
+        font-size: 0.5rem;
+        line-height: 1.4;
+    }
+
+    .left_container {
+        margin-top: 1.5rem;
+        padding: 0;
+
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .content {
+        padding: 0px 0px;
+        font-size: 0.9rem;
+    }
+
+    .content a {
+        font-size: 0.7rem;
+
+    }
+
+    .description_text {
+        font-size: 0.9rem;
+        line-height: 1.4;
+    }
+
+    .left_container {
+        margin-left: 20px;
+        margin-top: 1.5rem;
+        padding: 0;
+    }
+   
+}
+
+@media (max-width: 500px) {
+    .start-project-btn {
+        padding: 0.5rem 0.6rem;
+        font-size: 1rem;
+        overflow: hidden;
+    }
+
+   .left_container{
+    padding: 0;
+    width: 100%;
+    
+   }
+    .description_text{
+        font-size: 0.4rem;
     }
 }

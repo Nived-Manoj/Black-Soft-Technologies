@@ -11,7 +11,7 @@ import Testimonial from './testimonial/Testimonial';
 function App() {
   return (
     <div className='app_container'>
-      <TopBar />
+      <TopBar/>
       <Home />
       <Services />
       <TechnologiesMaster />
