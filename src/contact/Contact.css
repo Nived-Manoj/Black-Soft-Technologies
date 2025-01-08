@@ -96,6 +96,13 @@
     padding-right: 40px;
 }
 
+.left_section img {
+    width: 100px;
+    height: 100px; 
+    object-fit: cover; 
+    border-radius: 50%; 
+}
+
 .heading {
     font-size: 2.5rem;
     font-weight: 600;
@@ -115,6 +122,10 @@
 .right_section {
     flex: 1;
     padding-left: 40px;
+
+    h3{
+        margin-bottom: 10px;
+    }
 }
 
 .contact_logo {
