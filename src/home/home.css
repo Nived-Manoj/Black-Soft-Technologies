@@ -27,7 +27,6 @@
 .home_container {
     position: relative;
     z-index: 0;
-    /* Ensure the content stays above the video */
     color: #ffffff;
     display: flex;
     flex-direction: column;
@@ -45,8 +44,6 @@
     position: absolute;
     top: 43%;
     right: 60%;
-
-
     text-align: start;
     color: #ffffff;
     /* Use white for font color */
@@ -225,9 +222,7 @@
     padding: 15px;
     /* Add padding around the icon */
     border-radius: 50%;
-    /* Make the border circular */
     display: flex;
-    /* Ensure icons are inline and respect padding */
     justify-content: center;
     /* Center the icons inside the circle */
     align-items: center;
@@ -393,7 +388,7 @@
         margin-top: 1.5rem;
         padding: 0;
     }
-   
+
 }
 
 @media (max-width: 500px) {
@@ -403,12 +398,35 @@
         overflow: hidden;
     }
 
-   .left_container{
-    padding: 0;
-    width: 100%;
-    
-   }
-    .description_text{
+    .left_container {
+        padding: 0;
+        width: 100%;
+
+    }
+
+    .description_text {
         font-size: 0.4rem;
+    }
+
+
+    @media (max-width: 300px) {
+        .start-project-btn {
+            padding: auto;
+            font-size: 1px;
+            background-color: green;
+            overflow: hidden;
+        }
+
+        .left_container {
+            padding: 0;
+            width: 100%;
+
+        }
+
+        .description_text {
+            font-size: 0.4rem;
+        }
+
+
     }
 }
